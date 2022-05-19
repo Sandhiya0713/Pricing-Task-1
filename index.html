@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Pricing</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+  <header>
+    <h1>Simple Pricing</h1>
+
+    <div class="newsletter col-lg-12">
+    <form class="example" action=""                                                                                             >
+        <input type="text" placeholder="Your work email..." name="search2">
+        <button type="submit">Get Started Free</button>
+      </form>
+    </div>
+
+    <p class="p">Free forever version with Unlimited users. Free 14 days trial to test premium</p>
+    <p class="p-bg">FREE Asana & Jira Migration! Transfer everything in seconds!</p>
+
+   
+
+  </header>
+  <div class="cards">
+    <div class="card shadow col-lg-4 col-md-6 col-sm-12">
+      <ul>
+        <li class="pack">Free</li>
+        <li class="price"><span style="font-size:25px; text-align: center;">$<strong style="font-size:56px;margin-top:8px;">0</strong></span></li>
+        <p>per user/month</p>
+        <li><strong style="color:black;padding-right :2px;">Unlimited</strong> Users</li>
+        <li class="bottom-bar"><strong style="color:black;padding-right :2px;">Basic</strong> permissions</li>
+        <li><strong style="color:black;padding-right :2px;">100 MB </strong> storage</li>
+      </ul>
+    </div>
+    <div class="card active col-lg-4 col-md-6 col-sm-12">
+      <ul>
+        <li class="pack">Premium</li>
+        <li class="price"><span style="font-size:25px; text-align: center;">$<strong style="font-size:56px;margin-top:8px;">4</strong>.99</span></li>
+        <p>per user/month</p>
+        <div class="toggle">
+            <label>Monthly </label>
+            <div class="toggle-btn">
+              <input type="checkbox" class="checkbox" id="checkbox" />
+              <label class="sub" id="sub" for="checkbox">
+                <div class="circle"></div>
+              </label>
+            </div>
+            <label>Yearly</label>
+          </div>
+          <p style="font-size: 8px; color: deepskyblue; font-weight: 500;">Savings 20% per year</p>
+        <li class="bottom-bar"><strong style="color:black;padding-right :2px;">Free Guest</strong> Users</li>
+        <li class="bottom-bar"><strong style="color:black;padding-right :2px;">Advanced</strong> permissions</li>
+        <li class="bottom-bar"><strong style="color:black;padding-right :2px;">+10 GB </strong> storage per user</li>
+        <li class="bottom-bar"><strong style="color:black;padding-right :2px;">Priority </strong> support</li>
+      </ul>
+    </div>
+    <div class="amount-card shadow col-lg-4 col-md-6 col-sm-12">
+      <ul>
+        <li class="amount-pack">Calculate how much you'd spend</li>
+        <div style="display:flex; justify-content:space-between;">
+          <div style="display:block;">
+       <li id="tooltip2"></li>
+       <li style="color:aliceblue;font-size:10px;padding:5px;"># of users</li>
+      </div>
+      <div style="display:block;">
+       <li id="totalValue"></li>
+       <li style="color:aliceblue;font-size:10px; padding:5px;text-align: right; margin-left:40%;">Per month(billed yearly)</li>
+      </div>
+      </div>
+      <div class="range-slider">
+        <div id="tooltip"></div>
+        <input id="range" type="range" step="1" value="100" min="0" max="100">
+      </div>
+       
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
